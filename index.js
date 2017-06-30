@@ -4,7 +4,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient
 var collection;
   
-MongoClient.connect("mongodb://userLRG:R30lMtbfx6xGIsxq@172.31.54.164:27017/anchors", function(err, db){
+MongoClient.connect("mongodb://userLRG:R30lMtbfx6xGIsxq@10.130.52.196:27017/anchors", function(err, db){
 	if (err)	{
 		console.log("fail to open");
 	}else{
