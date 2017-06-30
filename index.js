@@ -4,7 +4,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient
 var collection;
   
-MongoClient.connect("mongodb://userLRG:R30lMtbfx6xGIsxq@172.30.194.237:27017/anchors", function(err, db){
+MongoClient.connect("mongodb://userLRG:R30lMtbfx6xGIsxq@172.31.54.164:27017/anchors", function(err, db){
 	if (err)	{
 		console.log("error");
 	}else{
