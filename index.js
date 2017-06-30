@@ -33,6 +33,10 @@ app.listen(8080);
 console.log('server is running...');
 
 function getNameList(callback){
+	if (collection == null){
+		return " no collection";
+	}
+	
 	collection.find().toArray(function(err, results){
 		if (err){
 			console.log('collection fails');
