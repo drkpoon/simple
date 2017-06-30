@@ -34,7 +34,7 @@ console.log('server is running...');
 
 function getNameList(callback){
 	if (collection == null){
-		return " no collection";
+		return ["no collection"];
 	}
 	
 	collection.find().toArray(function(err, results){
