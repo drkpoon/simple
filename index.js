@@ -6,7 +6,7 @@ var collection;
   
 MongoClient.connect("mongodb://userLRG:R30lMtbfx6xGIsxq@172.31.54.164:27017/anchors", function(err, db){
 	if (err)	{
-		console.log("error");
+		console.log("fail to open");
 	}else{
 	console.log('connected');
 	collection = db.collection('profiles');
@@ -34,6 +34,10 @@ console.log('server is running...');
 
 function getNameList(callback){
 	collection.find().toArray(function(err, results){
+		if (err){
+			console.log('collection fails');
+			return;
+		}
 		namelist = [];
 		for (i=0; i<results.length; i++){
 			namelist.push(results[i].name);
