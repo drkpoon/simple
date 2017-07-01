@@ -4,6 +4,8 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient
 var collection;
   
+console.log(process.env.OPENSHIFT_NODEJS_PORT);
+  
 var url = "mongodb://" + process.env.MONGODB_USER + ":" + process.env.MONGODB_PASSWORD
 	+ "@10.130.52.196:27017/anchors";
   
