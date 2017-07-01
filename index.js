@@ -4,7 +4,7 @@ var app = express();
 var MongoClient = require('mongodb').MongoClient
 var collection;
   
-Var url = "mongodb://" + process.env.MONGODB_USER + ":" + process.env.MONGODB_PASSWORD
+var url = "mongodb://" + process.env.MONGODB_USER + ":" + process.env.MONGODB_PASSWORD
 	+ "@10.130.52.196:27017/anchors";
   
 MongoClient.connect(url, function(err, db){
