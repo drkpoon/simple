@@ -10,7 +10,7 @@ app.get('/', function(req, res){
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
 		
-    res.end(datetime);
+    res.end('Current Time: ' + Date());
 });
 
 app.listen(8080);
