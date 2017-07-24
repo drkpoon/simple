@@ -13,5 +13,10 @@ app.get('/', function(req, res){
     res.end('Current Time: ' + Date());
 });
 
-app.listen(process.env.PORT || 8080);
+var port = 8080;
+if (process.env.port){
+	port = process.env.port;
+}
+
+app.listen(port);
 console.log('server is running...');
