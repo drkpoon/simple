@@ -9,7 +9,9 @@ app.get('/', function(req, res){
                 + currentdate.getHours() + ":"  
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
-		
+	var output = 'Current Time: ' + Date();
+	output = output + '\n' + currentdate.getTimezoneOffset();
+	output = output + '\n' + currentdate.getTime();
     res.end('Current Time: ' + Date());
 });
 
