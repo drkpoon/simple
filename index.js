@@ -12,7 +12,7 @@ app.get('/', function(req, res){
 	var output = 'Current Time: ' + Date();
 	output = output + '\n' + currentdate.getTimezoneOffset();
 	output = output + '\n' + currentdate.getTime();
-    res.end('Current Time: ' + Date());
+    res.end(output);
 });
 
 var port = 8080;
