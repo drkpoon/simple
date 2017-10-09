@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body onload="myFunction()">
+
+<h1>Server time is:</h1>
+Remote:
+<p id="content1"></p>
+Local:
+<p id="content"></p>
+
+<script>
+function myFunction() {
+    var date = new Date(<%= epoch %>);	
+	
+	document.getElementById("content").innerHTML = date;
+	document.getElementById("content1").innerHTML = "<%= serverTime %>";
+}
+</script>
+
+</body>
+
+</html>

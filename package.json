@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "testing",
   "main": "index.js",
-  "scripts": {    
+  "scripts": {
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3",
-    "mongodb": "^2.2.29"
+    "ejs": "^2.5.7",
+    "express": "^4.15.3"
   }
 }
