@@ -7,10 +7,11 @@ app.get('/', function(req, res){
 	res.render(__dirname + '/views/onload.ejs', {epoch: currentdate.getTime(), serverTime: currentdate});
 });
 
-var port = 8080;
-if (process.env.port){
-	port = process.env.port;
-}
+//var port = 8080;
+//if (process.env.port){
+//	port = process.env.port;
+//}
 
+var port = process.env.PORT || 8080;
 app.listen(port);
 console.log('server is running...on port ' + port);
